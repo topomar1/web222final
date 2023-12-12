@@ -1,0 +1,322 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url("/assets/fonts/EquinesDisplayOutline.ttf");
+}
+
+@font-face {
+  font-family: mySecondFont;
+  src: url("/assets/fonts/FieparoRegular.ttf");
+}
+
+@font-face {
+  font-family: myThirdFont;
+  src: url("/assets/fonts/EquinesDisplay-Bold.ttf");
+}
+
+@font-face {
+  font-family: four;
+  src: url("/assets/fonts/TikTokText-Regular.ttf");
+}
+
+.font2 {
+  font-family: mySecondFont;
+}
+
+.font3 {
+  font-family: myThirdFont;
+}
+
+* {
+  font-family: myFirstFont;
+}
+
+.introductory-section {
+  background-color: #6b0848;
+  color: orange;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 20px;
+}
+
+.navigation-links {
+  display: flex;
+  list-style-type: none;
+}
+
+.navigation-links > li > a {
+  display: flex;
+  padding-right: 20px;
+  text-decoration: none;
+  color: white;
+  font-family: myThirdFont;
+  transition: all 0.3s ease;
+}
+
+.navigation-links > li > a:hover {
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+.personal-details {
+  display: flex;
+  flex-direction: column-reverse;
+  /* justify-content: space-evenly; */
+  padding-inline: 50px;
+  align-items: center;
+}
+
+.personal-details > div > h1 {
+  font-size: 30px;
+}
+
+.personal-details > div > h3 {
+  font-size: 30px;
+}
+
+.personal-details > div > img {
+  height: 280px;
+}
+
+.persona {
+  padding: 20px;
+  text-align: center;
+}
+
+.persona > button {
+  background-color: orangered;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: myThirdFont;
+  text-decoration: none;
+}
+
+.persona > button > a {
+  text-decoration: none;
+  color: white;
+  font-family: myThirdFont;
+}
+
+.about-me {
+  /* background-color: #e3f3f7; */
+  padding: 30px;
+}
+
+.about-me > h1 {
+  color: #6b0848;
+}
+
+.about-me > p {
+  font-family: four;
+  line-height: 50px;
+}
+
+.basic-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.basic-info > div > h4 {
+  font-family: four;
+  color: #3a0088;
+}
+
+blockquote {
+  font-family: four;
+  text-align: center;
+}
+
+.education {
+  background-color: orangered;
+  padding: 60px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.education > div {
+  border: 2px solid white;
+  padding: 30px;
+  width: 500px;
+}
+
+.academic-honesty {
+  border: 5px solid orangered;
+  padding: 30px;
+}
+
+.education-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.education-card:hover {
+  transition: all 0.4s ease;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: #3a0088;
+  cursor: pointer;
+}
+.blob {
+  height: 600px;
+  position: absolute;
+  z-index: -1;
+  top: 1200px;
+  right: 1000px;
+}
+
+.blob2 {
+  height: 600px;
+  position: absolute;
+  z-index: -1;
+  top: 550px;
+  left: 800px;
+}
+
+.blob3 {
+  height: 500px;
+  position: absolute;
+  z-index: 1;
+  top: 2000px;
+  right: 1000px;
+}
+
+.blob4 {
+  height: 500px;
+  position: absolute;
+  z-index: 1;
+  top: 1800px;
+  left: 1000px;
+}
+
+.contact-me {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.contact-me > input {
+  padding: 10px;
+  font-family: four;
+}
+
+form > div {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+form > div > label {
+  width: 800px;
+}
+
+form > input[type="submit"] {
+  background-color: orangered;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: myThirdFont;
+  text-decoration: none;
+}
+
+.extra-field {
+  width: 50%;
+}
+
+@media only screen and (max-width: 400px) {
+  .personal-details {
+    flex-direction: column;
+  }
+
+  .personal-details > div > img {
+    height: 200px;
+  }
+
+  .introductory-section {
+    zoom: 0.7;
+  }
+
+  .navigation-links > li > a {
+    font-size: 9px;
+  }
+
+  .basic-info {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .education {
+    flex-direction: column;
+  }
+
+  .blob,
+  .blob2 .blob3 {
+    display: none;
+  }
+
+  .education > div {
+    border: 2px solid white;
+    padding: 30px;
+    width: 100%;
+  }
+
+  .education-card {
+    flex-direction: column;
+    height: 100%;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .personal-details {
+    flex-direction: column;
+  }
+
+  .personal-details > div > img {
+    height: 200px;
+  }
+
+  .introductory-section {
+    zoom: 0.7;
+  }
+
+  .navigation-links > li > a {
+    font-size: 9px;
+  }
+
+  .basic-info {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .education {
+    flex-direction: column;
+  }
+
+  .blob,
+  .blob2 .blob3 {
+    display: none;
+  }
+
+  .education > div {
+    border: 2px solid white;
+    padding: 30px;
+    width: 100%;
+  }
+
+  .education-card {
+    flex-direction: column;
+    height: 100%;
+    margin: 10px;
+  }
+}
