@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Final Assessment.</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </head>
+
+  <body>
+    <!-- NAVIGATION -->
+    <section class="introductory-section">
+      <div>
+        <nav class="navigation">
+          <h3>farouk.</h3>
+
+          <ul class="navigation-links">
+            <li><a href="#section1">About</a></li>
+            <li><a href="#section2">Education</a></li>
+            <li><a href="#section3">Contact Me</a></li>
+          </ul>
+        </nav>
+
+        <!-- PERSONAL DETAILS -->
+        <article class="personal-details">
+          <div class="persona">
+            <h1>Farouk Alhassan</h1>
+            <!-- insert name here -->
+            <h3>Web Developer, Software Engineer <br /></h3>
+
+            <button>
+              <a href="/assets/docs/CV-Farouk-Alhassan.pdf" download>✅ Resume</a>
+            </button>
+            <button><a href="#section3">📲 Contact Me</a></button>
+          </div>
+
+          <div>
+            <img src="/assets/me.png" alt="my image" />
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-me" id="section1">
+      <h1>About me</h1>
+
+      <p>
+        I'm Farouk Alhassan, a web developer/ software Engineer. I find joy in
+        coding and hope that my skills will make a real impact in any company I
+        join. When I'm not immersed in programming, you can find me enjoying
+        soccer matches or having a blast playing games with my friends. Oh, and
+        I can't forget my love for coffee – it's a must-have in my daily
+        routine! I'm always eager to talk about technology, gaming, or anything
+        else that piques your interest. Feel free to share your thoughts or ask
+        me anything!
+      </p>
+
+      <br />
+      <br />
+      <br />
+
+      <h1>Basic Information</h1>
+
+      <section class="basic-info">
+        <div>
+          <h3>Age</h3>
+          <h4>23</h4>
+        </div>
+
+        <div>
+          <h3>Email</h3>
+          <h4>falhassan1@myseneca.ca</h4>
+        </div>
+
+        <div>
+          <h3>Language</h3>
+          <h4>English</h4>
+        </div>
+
+        <div>
+          <h3>Class Section</h3>
+          <h4>WEB222-NFF</h4>
+        </div>
+
+        <div>
+          <h3>Student ID</h3>
+          <h4>133081224</h4>
+        </div>
+
+        <div>
+          <h3>Instructor</h3>
+          <h4>Mark Meritt</h4>
+        </div>
+      </section>
+
+      <br />
+      <br />
+      <br />
+
+      <section class="academic-honesty">
+        <h1>Academic Honesty</h1>
+
+        <blockquote class="blockquote">
+          I declare that my assessment is wholly my own work in accordance with
+          Seneca Academic Policy. No part of this assessment has been copied
+          manually or electronically from any other source (including web sites)
+          except for the information supplied by the WEB222 instructors and / or
+          made available in this assessment for my use. I also declare that no
+          part of this assignment has been distributed to other students
+        </blockquote>
+      </section>
+    </section>
+
+    <section class="education" id="section2">
+      <h1>Education</h1>
+
+      <!-- <img src="/assets/blob.png" alt="blob" class="blob" /> -->
+      <!-- <img src="/assets/blob2.png" alt="blob" class="blob2" /> -->
+
+      <div class="education-card">
+        <div>
+          <h3>Prempeh College</h3>
+          <p>2015 - 2018</p>
+        </div>
+
+        <div>General Science</div>
+      </div>
+
+      <div class="education-card">
+        <div>
+          <h3>Seneca Polytechnic, Canada</h3>
+          <h4>College Diploma</h4>
+          <p>2023 - Present</p>
+        </div>
+
+        <div>Computer Programming 👩‍💻</div>
+      </div>
+    </section>
+
+    <!-- CONTACT ME SECTION -->
+    <form
+      class="contact-me"
+      name="myForm"
+      onsubmit="return validateForm(event);"
+      id="section3"
+    >
+      <h1>Contact me</h1>
+      <br /><br /><br />
+
+      <label for="fname">Name:</label><br />
+      <input type="text" id="fname" name="fname" /><br /><br />
+
+      <label for="lname">Email address:</label><br />
+      <input type="email" id="email" name="email" /><br /><br />
+
+      <label for="address">Address:</label><br />
+      <input type="text" id="address" name="address" /><br /><br />
+
+      <label for="city">City:</label><br />
+      <input type="text" id="city" name="city" /><br /><br />
+
+      <label for="postal-code">Postal Code:</label><br />
+      <input type="text" id="postal-code" name="postal-code" /><br /><br />
+
+      <label for="hiring">Hiring:</label>
+      <input
+        type="radio"
+        id="hiring"
+        name="selection"
+        value="hiring"
+        onchange="showField('hiring');"
+      /><br /><br />
+
+      <div id="dynamicField"></div>
+
+      <label for="comment">Comment:</label>
+      <input
+        type="radio"
+        id="comment"
+        name="selection"
+        value="comment"
+        onchange="showField('comment');"
+      /><br /><br />
+
+      <label for="question">Question:</label>
+      <input
+        type="radio"
+        id="question"
+        name="selection"
+        value="question"
+        onchange="showField('question');"
+      /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>
